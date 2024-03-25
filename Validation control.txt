@@ -1,0 +1,27 @@
+Practical no:3
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="Validation.WebForm2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Name:
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please Enter The Name" ForeColor="Red"></asp:RequiredFieldValidator>
+            <br />
+            Email:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Enter The Email" ForeColor="Blue"></asp:RequiredFieldValidator>
+
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Submit" />
+
+        </div>
+    </form>
+</body>
+</html>
